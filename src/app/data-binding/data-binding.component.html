@@ -1,0 +1,28 @@
+<div align="center">
+    <P> 1.Interpolation  binding</P>
+    <h4>hi welcome, one way data binding</h4>
+    <p> name:{{name}}</p>
+    <p> age:{{age}}</p>
+<P> 2.property binding</P>
+
+<div >
+  <input type="text" name="" id="" [value]="name">
+</div>
+<div >
+<P> 3.Event binding</P>
+<button (click)="onsave()">save</button>
+        <select (change)="onchange($event)">
+
+            <option value="country"> country</option>
+            <option value="India"> india</option>
+            <option value="england"> eng</option>
+            <option value="france"> france</option>
+
+        </select>
+</div>
+    <h4>4. two way data bindingd</h4>
+   <div>
+    <input type="text" [(ngModel)]="name">
+    {{name}}
+   </div>
+</div>

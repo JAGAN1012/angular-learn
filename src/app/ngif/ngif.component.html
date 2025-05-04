@@ -1,0 +1,16 @@
+<div class="row text-center">
+
+    <div (click)="onclick()">
+        <input type="checkbox">Term and condition
+    </div>
+    <div *ngIf="ischeck">
+        <button class="btn btn-success">submit</button>
+    </div>
+    <div  >
+      <div *ngIf="isInput">
+        <input type="text" [(ngModel)]="name">{{name}}
+      </div>
+       <button class="btn btn-danger" (click)="onshow()">show</button>
+        <button class="btn btn-primary" (click)="onhide()">Hide</button>
+    </div>
+</div>
